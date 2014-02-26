@@ -2,11 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <link type="text/css" rel="stylesheet" href="Assets/CSS/styles.css"/>
     <title>Contact</title>
 </head>
 <body>
+<header>
 <h1>Arrow Photography</h1>
-
+<nav>
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -15,11 +17,101 @@
     <li><a href="news.html">News</a></li>
     <li><a href="contact.html">Contact</a></li>
 </ul>
+</nav>
+    </header>
+<div class="content">
+    <section class="section one">
 <p><img src="Assets/Img/ArrowPhotograhyFrontPage4.jpg" alt="Wedding photo 2"/></p>
-<h2>Contact</h2>
-<br>
-    <p style="text-align: center"><a href="general/terms.html">Terms and Conditions</a></p>
-    <p style="text-align: center"><abbr title="frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></p>
 
+
+<h2>Contact</h2>
+<table border="1">
+    <caption>Arrow Photogarphy Staff</caption>
+    <thead>
+    <tr>
+        <th scope="col">Name:</th>
+        <th scope="col">Gender:</th>
+        <th scope="col">Email:</th>
+        <th scope="col">Mood:</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="4">All info is private and confidential</td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <th scope="row">Paul</th>
+        <td rowspan="4">Man</td>
+        <td>Paul@here.com</td>
+        <td rowspan="8">Happy</td>
+    </tr>
+    <tr>
+        <th scope="row">Guy</th>
+        <td>Guy@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Daniel</th>
+        <td>Daniel@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Charlie</th>
+        <td>Charlie@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Sandra</th>
+        <td rowspan="4">Woman</td>
+        <td>S@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Kat</th>
+        <td>K@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Juliet</th>
+        <td>J@here.com</td>
+    </tr>
+    <tr>
+        <th scope="row">Mary</th>
+        <td>M@here.com</td>
+    </tr>
+    </tbody>
+</table>
+
+        <h3>Review us</h3>
+        <form method="post" action="http://webdesignstudents.co.uk/students/response.php">
+            <p><label for="contactname">Name: </label><input type="text" name="contactname" id="contactname"/></p>
+            <p><label for="contactmail">Email: </label><input type="text" name="contactemail" id="contactmail"/></p>
+
+            <p>Gender
+                <label><input type="radio" name="gender" value="male" /> Male</label>
+           <label> <input type="radio" name="gender" value="female" checked />Female</label>
+            <label> <input type="radio" name="gender" value="other" /> Other </label></p>
+
+            <p><label for="location"> Location:
+            <select name="location" id="location">
+                    <option value="Brighton">Brighton &amp; Hove</option>
+                <option value="Brighton">Worthing</option>
+                <option value="Brighton">Eastborne</option>
+            </select></label>
+
+            <p><label for="comment">Comment: <textarea name="comment" cols="18" rows="8"></textarea></label></p>
+            <p>
+                <input type="submit" name="submit" value="Send Comment" id="comment"/>
+            </p>
+        </form>
+
+    </section>
+    <br>
+    </div>
+<footer>
+   <nav>
+       <ul>
+   <li><a href="general/terms.html">Terms and Conditions</a></li>
+   <li><abbr title="frequently Asked Questions"><a href="general/faq.html">FAQ</a></abbr></li>
+        </ul>
+   </nav>
+</footer>
 </body>
 </html>
